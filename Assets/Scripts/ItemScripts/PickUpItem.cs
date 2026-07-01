@@ -5,8 +5,12 @@ public class PickUpItem : MonoBehaviour {
     public InputActionReference rightClick;
     public InputActionReference mousePoint;
     public ItemData itemType;
+    
+    private GameObject player;
 
-    GameObject createObject;
+    void Start() {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     void OnEnable() {
         rightClick.action.Enable();
@@ -29,6 +33,7 @@ public class PickUpItem : MonoBehaviour {
             if (Physics.Raycast(ray, out hit)) {
                 if (hit.collider.gameObject.CompareTag("Item")) {
                     clickedObject = hit.collider.gameObject;
+                    player.GetComponent<Inventory>().addItem(itemType);
                     Destroy(clickedObject);
                 }
             }

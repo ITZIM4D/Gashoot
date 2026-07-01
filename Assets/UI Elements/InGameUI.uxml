@@ -1,9 +1,15 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Elements/Hotbar.uss?fileID=7433441132597879392&amp;guid=3b0a835e62399e94a8f8f35a26af5932&amp;type=3#Hotbar" />
     <ui:VisualElement name="VisualElement" style="flex-grow: 1;">
         <ui:Label text="Health" name="Health" style="-unity-font-style: bold; font-size: 50px; color: rgb(255, 1, 19); -unity-text-outline-width: 0; -unity-text-outline-color: rgb(0, 0, 0);">
             <Bindings>
                 <ui:DataBinding property="text" data-source-path="currentHealth" data-source-type="Health, Assembly-CSharp" binding-mode="ToTarget" />
             </Bindings>
         </ui:Label>
+        <ui:VisualElement name="Hotbar" style="flex-grow: 1; width: auto; height: auto; flex-basis: auto; flex-direction: row;">
+            <ui:VisualElement name="Slot" style="flex-grow: 1; width: 64px; height: 64px;">
+                <ui:VisualElement name="Icon" style="flex-grow: 1; width: 48px; height: 48px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

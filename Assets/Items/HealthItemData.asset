@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c6c598c292b4c469693fb183148daf, type: 3}
-  m_Name: Health
-  m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  itemName: 
+  m_Script: {fileID: 11500000, guid: a2bcea3dd30eeae4e9cca9902c499b10, type: 3}
+  m_Name: HealthItemData
+  m_EditorClassIdentifier: Assembly-CSharp::HealthItemData
+  itemName: Health Item
   icon: {fileID: 21300000, guid: ff0259c91af7beb45b6023bb3b8a6bec, type: 3}
-  description: 
+  description: Heals you
