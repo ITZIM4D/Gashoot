@@ -25,7 +25,7 @@ public class ChasePlayer : MonoBehaviour {
             player.transform.position
         );
 
-        if (distance < aggroDistance) {
+        if (distance < aggroDistance && distance > 1) {
             agent.isStopped = false;
             agent.SetDestination(player.transform.position);
         }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class AttackPlayer : MonoBehaviour {
     public float attackSpeed = 2; // Time between attacks
     public int attackDamage = 10; // Health per attack
-    public int attackRange = 1;
+    public float attackRange = 1;
 
     private GameObject player;
     private Vector3 playerLocation;

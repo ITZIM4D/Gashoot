@@ -23,6 +23,10 @@ public class Health : MonoBehaviour {
         }
     }
 
+    public void heal(int healAmount) {
+        currentHealth = Mathf.Min(maxHealth, currentHealth + healAmount);
+    }
+
     private void die() {
         Destroy(gameObject);
     }
